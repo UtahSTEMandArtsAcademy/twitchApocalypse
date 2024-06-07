@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401535820}
   - component: {fileID: 401535819}
-  - component: {fileID: 401535821}
+  - component: {fileID: 401535823}
   - component: {fileID: 401535822}
   m_Layer: 0
   m_Name: Character
@@ -334,7 +334,31 @@ Transform:
   - {fileID: 1117585517}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &401535821
+--- !u!114 &401535822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401535818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcd137c8597140748c4b0e1e6686e77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: -944628639613478452, guid: e1e515d8bf278441fbc2ff6b55413aea, type: 3}
+  moveSpeed: 1000
+  damping: 0
+  move:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3e2c60a5-4504-4b50-aad1-2fde5835ef34
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+--- !u!54 &401535823
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -361,30 +385,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &401535822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 401535818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edcd137c8597140748c4b0e1e6686e77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: {fileID: -944628639613478452, guid: e1e515d8bf278441fbc2ff6b55413aea, type: 3}
-  moveSpeed: 1000
-  damping: 0
-  move:
-    m_Name: Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 3e2c60a5-4504-4b50-aad1-2fde5835ef34
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
 --- !u!1 &1117585516
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +526,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302592560}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: be002f97e888547d68c42f0787fbd8d0, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
