@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Singleton { get { if (_singleton == null) _singleton = FindAnyObjectByType<GameManager>(); return _singleton; }}
     private static GameManager _singleton;
+    public GameObject mainVolumeSlider;
+    public GameObject musicVolumeSlider;
+    public GameObject soundEffectSlider;
 
     void Awake()
     {
@@ -42,9 +45,12 @@ public class GameManager : MonoBehaviour
             default:
                 Debug.Log("Not a Resolution");
                 break;
-        }//640x400
-        //1000x800
-        //1920x1080
-        //3840x2160
+        }
+    }
+
+    public void UpdateVolumes()
+    {
+        // Update from the slider and then update the playerprefs for the things anyway
+        return;
     }
 }
