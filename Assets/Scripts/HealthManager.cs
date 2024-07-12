@@ -31,7 +31,7 @@ public class HealthManager : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        health = Mathf.Clamp(health - damage, 0, maxHealth);
         if (onDamaged != null)
         {
             onDamaged.Invoke();
