@@ -24,7 +24,6 @@ public class MeleeAttackBehavior : Behavior
         {
             self.state = EnemyController.State.Melee;
             onAttack.Invoke();
-            Debug.Log("Attacking!");
             attackTimer = 1 / attackSpeed;
             self.state = EnemyController.State.Idle;
         }
