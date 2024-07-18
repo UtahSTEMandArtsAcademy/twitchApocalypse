@@ -4,8 +4,8 @@ using System.Linq;
 public class EnemyController : MonoBehaviour{
     public enum State {
         Idle,
-        Approach
-
+        Approach,
+        Melee
     }
 
     public State state = State.Idle;
