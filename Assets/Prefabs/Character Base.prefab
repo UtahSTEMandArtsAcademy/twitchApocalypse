@@ -45,3 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 1
+  maxHealth: 0
+  sprite: {fileID: 0}
+  contactDmg: 0
+  knockBack: 0
+  opacity: 0
+  health: 0
