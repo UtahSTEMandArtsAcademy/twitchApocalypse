@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class WizardSelect : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class WizardSelect : MonoBehaviour
         changing = false;
         changingButton.text = "Change";
         readyButtonText.text = "Ready";
+        EventSystem.current.SetSelectedGameObject(changingButton.transform.parent.gameObject);
     }
 
     public void ReadyButton()
