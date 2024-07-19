@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 5889631992747812073}
   - component: {fileID: 8467580670569137889}
   m_Layer: 5
-  m_Name: Button Resume
+  m_Name: Button Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,10 +523,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5066938621223398541}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: -8223825384573210191}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: MainMenuReturn
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 2561693147234879937}
   - component: {fileID: 4332849406921360421}
   m_Layer: 5
-  m_Name: Button Options
+  m_Name: Button Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -963,7 +963,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2561693147234879937}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -8223825384573210191}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ToggleMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8841184408233716203
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +989,7 @@ GameObject:
   - component: {fileID: 1374644025702169075}
   - component: {fileID: 2923165795323405772}
   m_Layer: 5
-  m_Name: Button Exit
+  m_Name: Button Save & Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
