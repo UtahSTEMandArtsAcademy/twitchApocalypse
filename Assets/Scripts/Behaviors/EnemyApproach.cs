@@ -8,7 +8,6 @@ using UnityEngine.AI;
 public class EnemyApproach : Behavior
 {
     private NavMeshAgent ai;
-    public Transform player;
     public float speed = 3.5f;
     void Start()
     {
@@ -23,7 +22,7 @@ public class EnemyApproach : Behavior
     }
     IEnumerator Target()
     {
-        ai.SetDestination(player.position);
+        ai.SetDestination(self.nearestPlayer.position);
         yield return new WaitForSeconds(rate);
         StartCoroutine(Target());
     }
