@@ -23,7 +23,7 @@ public class WizardMovement : MonoBehaviour
     void Update()
     {
         Vector2 moveInput = move.ReadValue<Vector2>();
-        Debug.Log(moveInput);
+        //Debug.Log(moveInput);
         rb.AddForce(new Vector3(moveInput.x, 0, moveInput.y) * moveSpeed * Time.deltaTime);
 
     }
