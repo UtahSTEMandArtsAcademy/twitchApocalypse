@@ -7,5 +7,6 @@ public class Behavior : MonoBehaviour {
 
     void Awake() {
         self = GetComponent<EnemyController>();
+        Debug.Log($"Parant: {self.name}");
     }
 }
