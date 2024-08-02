@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour{
     public Transform nearestPlayer;
 
     void Start(){
-        players = GameObject.FindGameObjectsWithTag("player").Select(player => player.transform).ToArray();
+        players = GameObject.FindGameObjectsWithTag("Player").Select(player => player.transform).ToArray();
         nearestPlayer = players[0];
     }
     void Update(){
